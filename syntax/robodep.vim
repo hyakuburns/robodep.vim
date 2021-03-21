@@ -9,7 +9,6 @@ endif
 
 syn keyword rbdTodo contained TODO FIXME XXX NOTE
 syn match rbdRepo "^\vhg|^git"
-syn keyword rbdRepo git hg
 syn keyword rbdDep depstart
 syn match rbdComment "#.*$" contains=celTodo
 
