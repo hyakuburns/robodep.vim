@@ -8,7 +8,7 @@ if exists("b:current_syntax")
 endif
 
 syn keyword rbdTodo contained TODO FIXME XXX NOTE
-syn match rbdRepo "^\vhg|^git"
+syn match rbdRepo "^\vhg|^git" nextgroup=rbdString skipwhite
 syn keyword rbdDep depstart
 syn match rbdComment "#.*$" contains=celTodo
 
@@ -16,5 +16,6 @@ hi def link rbdTodo       Todo
 hi def link rbdComment    Comment
 hi def link rbdRepo       Type
 hi def link rbdDep        Constant
+hi def link rbdString     String
 
 let b:current_syntax = "robodep"
