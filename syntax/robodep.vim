@@ -17,6 +17,6 @@ hi def link rbdTodo       Todo
 hi def link rbdComment    Comment
 hi def link rbdRepo       Type
 hi def link rbdDep        Constant
-hi def link rbdString     String
+hi def link rbdString     Character
 
 let b:current_syntax = "robodep"
