@@ -8,6 +8,7 @@ if exists("b:current_syntax")
 endif
 
 syn keyword rbdTodo contained TODO FIXME XXX NOTE
+syn region celString start='' end='' contained
 syn match rbdRepo "^\vhg|^git" nextgroup=rbdString skipwhite
 syn keyword rbdDep depstart
 syn match rbdComment "#.*$" contains=celTodo
