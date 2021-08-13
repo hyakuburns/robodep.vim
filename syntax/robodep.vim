@@ -11,7 +11,7 @@ syn keyword rbdTodo contained TODO FIXME XXX NOTE
 syn match rbdString "\p\+" contained
 syn match rbdRepo "^\vhg|^git" nextgroup=rbdString skipwhite
 syn keyword rbdDep depstart
-syn match rbdComment "#.*$" contains=celTodo
+syn match rbdComment "#.*$" contains=rbdTodo
 
 hi def link rbdTodo       Todo
 hi def link rbdString     String
